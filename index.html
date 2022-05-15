@@ -11,12 +11,13 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./aos/aos.css" />
     <!-- Document Title -->
     <title>Insure | Humanizing your insurance</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header data-aos="fade-down">
       <a href="#" class="brand-logo">
         <img src="./images/logo.svg" alt="Insure Logo" />
       </a>
@@ -44,11 +45,13 @@
           src="./images/image-intro-mobile.jpg"
           alt="Intro image"
           class="mobile-main-image"
+          data-aos="zoom-out"
+          data-aos-delay="300"
         />
 
         <!-- Main Content -->
         <div class="content-wrapper">
-          <div class="content">
+          <div class="content" data-aos="fade-down">
             <div class="line"></div>
             <h2>Humanizing Your Insurance.</h2>
             <p>
@@ -62,6 +65,7 @@
             src="./images/image-intro-desktop.jpg"
             alt="introduction image"
             class="desktop-main-image"
+            data-aos="fade-left"
           />
           <!-- Lines for Mobile -->
           <img
@@ -83,17 +87,25 @@
           alt="illustration image 1"
           id="illust-1-desktop"
           class="desktop-illust"
+          data-aos="fade-right"
+          data-aos-delay="300"
         />
         <img
           src="./images/bg-pattern-intro-right-desktop.svg"
           alt="illustration image 2"
           id="illust-2-desktop"
           class="desktop-illust"
+          data-aos="fade-left"
+          data-aos-delay="600"
         />
       </div>
     </main>
     <!-- Section Different -->
-    <section class="different-section">
+    <section
+      class="different-section"
+      data-aos="fade-down"
+      data-aos-delay="300"
+    >
       <div class="wrapper">
         <div class="line"></div>
         <h3>We're different</h3>
@@ -133,7 +145,7 @@
     </section>
     <!-- Section Findout -->
     <div class="wrapper">
-      <section class="findout-section">
+      <section class="findout-section" data-aos="zoom-in">
         <h3>Find out more about how we work</h3>
         <a href="#" class="cta">How we work</a>
       </section>
@@ -143,7 +155,7 @@
     <!-- Footer -->
     <footer>
       <div class="wrapper">
-        <div class="social-container">
+        <div class="social-container" data-aos="fade-down">
           <a href="#">
             <img
               src="./images/logo.svg"
@@ -178,7 +190,7 @@
         </div>
         <div class="footer-line"></div>
         <div class="links-container">
-          <div>
+          <div data-aos="fade-down">
             <p>Our Company</p>
             <ul class="links">
               <li><a href="#">How we work</a></li>
@@ -187,7 +199,7 @@
               <li><a href="#">Reviews</a></li>
             </ul>
           </div>
-          <div>
+          <div data-aos="fade-down" data-aos-delay="300">
             <p>Help Me</p>
             <ul class="links">
               <li><a href="#">FAQ</a></li>
@@ -195,7 +207,7 @@
               <li><a href="#">cookies</a></li>
             </ul>
           </div>
-          <div>
+          <div data-aos="fade-down" data-aos-delay="600">
             <p>Contact</p>
             <ul class="links">
               <li><a href="#">Sales</a></li>
@@ -203,7 +215,7 @@
               <li><a href="#">Live Chat</a></li>
             </ul>
           </div>
-          <div>
+          <div data-aos="fade-down" data-aos-delay="900">
             <p>Others</p>
             <ul class="links">
               <li><a href="#">Careers</a></li>
@@ -216,5 +228,9 @@
     </footer>
     <!-- /Footer -->
     <script src="./js/script.js"></script>
+    <script src="./aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
